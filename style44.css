@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: flex;
+    color: #2f2d2d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(57, 143, 208);
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding: 20px;
+}
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(169, 199, 212);
+}
+
+header {
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.15em #1da9cc;
+    user-select: none;
+    white-space: pre-wrap;
+    filter: blur(0.007em);
+    animation: shake 2.5s linear forwards;
+    background-color: #2f2d2d;
+    padding: 30px;
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(57, 143, 208);
+    width: 30%;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    padding: 20px;
+    background-image: url("photos/back1.jpg");
+}
+
+.column {
+    padding: 1%;
+    height: auto;
+    background-color: rgb(208, 207, 205);
+    color: rgb(0, 0, 0);
+}
+
+#poza1 {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 20%;
+}
+
+iframe {
+    display: flex;
+    margin-left: 25%;
+    margin-top: -27%;
+    aspect-ratio: 16 / 9;
+    width: 50%;
+}
+
+#poza2 {
+    display: flex;
+    margin-left: 78%;
+    margin-top: -29%;
+    width: 20%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    color: rgb(57, 143, 208);
+    background-color: #2f2d2d;
+    padding: 2%;
+    margin-top: 3%;
+    position: relative;
+}

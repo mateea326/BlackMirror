@@ -1,0 +1,437 @@
+:root {
+        --size: 100%;
+}
+
+html {
+        background: fixed;
+        overflow-x: hidden;
+}
+
+h1 {
+        text-align: center;
+        position: relative;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-shadow: 0 0 0.15em #1da9cc;
+        user-select: none;
+        white-space: pre-wrap;
+        filter: blur(0.007em);
+        padding: 4%;
+}
+
+h2 {
+        text-align: center;
+        color: thistle;
+        margin: auto;
+        position: relative;
+        text-shadow: -1px 1px 1px rgb(73, 71, 72);
+}
+
+body {
+        color: whitesmoke;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 12pt;
+        background-image: url("photos/back.jpg");
+        padding: 0;
+        margin: 0;
+}
+
+a:link {
+        color: rgb(113, 139, 192);
+}
+
+a:visited {
+        color: rgb(201, 146, 219);
+}
+
+a:hover {
+        color: hotpink;
+}
+
+.topnav {
+        background-color: #2f2d2d;
+        overflow: hidden;
+}
+
+.topnav a {
+        float: left;
+        display: block;
+        color: thistle;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        cursor: grab;
+}
+
+.dropdown {
+        float: left;
+        overflow: hidden;
+}
+
+.dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: rgb(201, 146, 219);
+        padding: 14px 16px;
+        font-family: inherit;
+        margin: 0;
+}
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+}
+
+.dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+        background-color: thistle;
+        color: white;
+}
+
+.dropdown-content a:hover {
+        background-color: thistle;
+        color: black;
+}
+
+.dropdown:hover .dropdown-content {
+        display: block;
+}
+
+.heart {
+        display: block;
+        position: relative;
+        margin-top: -9%;
+        margin-left: 6%;
+        width: 4rem;
+        aspect-ratio:1/1;
+        border-image: radial-gradient(thistle 69%, #0000 70%) 84.5% fill/100%;
+        clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+        transition: width 2s, border-image 2s, rotate 2s;
+}
+
+.heart:hover {
+        width:5rem;
+        border-image: radial-gradient(rgb(144, 127, 174) 69%, #0000 70%) 84.5% fill/100%;
+        transform:rotate(180deg);
+}
+
+.container {
+        z-index: -999;
+        height: 20%;
+        width: 20%;
+        position: relative;
+        margin-left: 75%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+}
+
+.moon {
+        background-color: #39beff;
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+}
+
+.crater {
+        background-color: #31b4ff;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        position: relative;
+}
+
+.crater:before {
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        box-shadow: -5px 0 0 2px #1ca4f9;
+        top: 2px;
+        left: 7px;
+}
+
+.crater1 {
+        top: 27px;
+        left: 90px;
+        transform: scale(0.9);
+}
+
+.crater2 {
+        bottom: 15px;
+        left: 61px;
+        transform: scale(0.6);
+}
+
+.crater3 {
+        left: 15px;
+        transform: scale(1.05)
+}
+
+.crater4 {
+        top: 23px;
+        left: 118px;
+        transform: scale(1.1)
+}
+
+.crater5 {
+        left: 35px;
+        transform: scale(0.5)
+}
+
+.shadow {
+        height: 190px;
+        width: 190px;
+        box-shadow: 21px 0 0 5px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        position: relative;
+        bottom: 157.5px;
+        right: 46px;
+        filter: blur(3px)
+}
+
+.eye {
+        height: 12px;
+        width: 12px;
+        background-color: #161616;
+        position: relative;
+        border-radius: 50%;
+}
+
+.eye-l {
+        bottom: 255px;
+        left: 59px;
+}
+
+.eye-r {
+        bottom: 267px;
+        left: 101px;
+}
+
+.mouth {
+        height: 5px;
+        width: 10px;
+        border: 3px solid #161616;
+        position: relative;
+        bottom: 262px;
+        left: 79px;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+}
+
+.blush {
+        height: 7.5px;
+        width: 7.5px;
+        background-color: #F4DDE4;
+        position: relative;
+        border-radius: 50%;
+        filter: blur(3px)
+}
+
+.blush1 {
+        bottom: 273px;
+        left: 50px;
+}
+
+.blush2 {
+        bottom: 280px;
+        left: 115px;
+}
+
+.orbit {
+        height: 280px;
+        width: 280px;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+        100% {
+                transform: rotate(360deg)
+        }
+}
+
+.rocket {
+        background-color: #fafcf7;
+        height: 50px;
+        width: 25px;
+        border-radius: 50% 50% 0 0;
+        position: relative;
+        left: -11px;
+        top: 115px;
+}
+
+.rocket:before {
+        position: absolute;
+        content: "";
+        background-color: #39beff;
+        height: 20px;
+        width: 55px;
+        z-index: -1;
+        border-radius: 50% 50% 0 0;
+        right: -15px;
+        bottom: 0;
+}
+
+.rocket:after {
+        position: absolute;
+        content: "";
+        background-color: #39beff;
+        height: 4px;
+        width: 15px;
+        border-radius: 0 0 2px 2px;
+        bottom: -4px;
+        left: 4.3px;
+}
+
+.window {
+        position: relative;
+        height: 10px;
+        width: 10px;
+        background-color: #151845;
+        border: 2px solid #b8d2ec;
+        border-radius: 50%;
+        top: 15px;
+        left: 5px;
+}
+
+#about_header {
+        display: flex;
+        margin-top: 2%;
+        justify-content: center;
+}
+
+.about {
+        display: flex;
+        width: 80%;
+        height: 20%;
+        flex-direction: column;
+        border: 2px solid rgb(194, 138, 180);
+        padding: 5%;
+        margin: auto;
+        background-color: #000000;
+        position: relative;
+}
+
+.table-poster {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+}
+
+table {
+        table-layout: fixed;
+        width: 40%;
+        margin-top: 2%;
+        margin-left: -5%;
+        position: relative;
+        table-layout: auto;
+        overflow-x: visible;
+        border-collapse: collapse;
+}
+
+th {
+        color: #151845;
+        background-color: rgb(163, 179, 193);
+        border: 1px solid white;
+}
+
+td {
+        text-align: center;
+        color: #daa9c6;
+        border: 1px solid white;
+}
+
+#poster {
+        width: 30%;
+        position: relative;
+        height: fit-content;
+        aspect-ratio: 4/3;
+        margin-top: 2%;
+}
+
+#suad {
+        display: flex;
+        margin-top: 3%;
+        margin-left: 3%;
+        position: relative;
+        width: 18%;
+
+}
+
+.yt {
+        display: flex;
+        margin: auto;
+        margin-top: -25%;
+        position: relative;
+        aspect-ratio: 16 / 9;
+        width: 50%;
+}
+
+#white {
+        display: flex;
+        margin-top: -28%;
+        margin-left: 79%;
+        position: relative;
+        width: 18%;
+}
+
+#Play {
+        margin-top: 5%;
+}
+
+.game {
+        display: flex;
+        margin: auto;
+        position: relative;
+        aspect-ratio: 5/4;
+        width: 98%;
+
+}
+
+footer {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        color: thistle;
+        background-color: #2f2d2d;
+        padding: 2%;
+        position: relative;
+
+}
