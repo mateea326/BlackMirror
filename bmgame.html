@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandersnatch Maze</title>
+  <link rel="stylesheet" href="bmgame.css" type="text/css">
+  <link rel="icon" href="photos/icon2.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Play the Bandersnatch Maze!</h1>
+  </header>
+  <p>Use cursor keys to solve the maze.</p>
+  <div id="game-container-1" class="game-container">
+    <div id="map">
+      <div id="game-map" class="game-map">
+        <div id="tiles" class="layer"></div> <!--floor+wall-->
+        <div id="sprites" class="layer"></div> <!--player+goal-->
+        <div id="success-msg">Goal reached! Tap the maze to change levels.</div>
+      </div>
+    </div>
+  </div>
+  <div id="level-number"></div>
+  
+  <script src="bmgame.js"></script>
+</body>
+
+</html>

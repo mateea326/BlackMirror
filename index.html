@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autor" content="Roman Mateea">
 
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="photos/icon.png" type="image/x-icon">
@@ -31,10 +29,14 @@
             <a href="s3ep1.html">Nosedive</a>
             <a href="s4ep4.html">Hang the DJ</a>
             <a href="s4ep7.html">Bandersnatch</a>
+            <a href="bmgame.html">Bandersnatch game</a>
+            <a href="quiz.html">Black Mirror quiz</a>
         </div>
         <h1>The universe of Black Mirror</h1>
     </header>
-    <div class="heart"></div>
+    <div id="heart-container">
+        <div class="heart"></div>
+    </div>
     <div class="container">
         <div class="moon">
             <div class="crater crater1"></div>
@@ -57,7 +59,7 @@
     </div>
     <main>
         <section>
-            <h2 id="about_header">About</h2> <br><br>
+            <h2 id="about_header">About</h2>
             <div class="about">
                 <p><a href="https://en.wikipedia.org/wiki/Black_Mirror"><i>Black Mirror</i></a> is a British anthology
                     television series created by <a href="https://en.wikipedia.org/wiki/Charlie_Brooker"><i>Charlie
@@ -66,7 +68,7 @@
 
                 <p>There are 22 episodes across five series and one special, in addition to the interactive film
                     <a href="https://en.wikipedia.org/wiki/Black_Mirror:_Bandersnatch"><i>Black Mirror: Bandersnatch
-                            (2018)"</i></a> and the 2014 special
+                            (2018)</i></a> and the 2014 special
                     <a href="https://en.wikipedia.org/wiki/White_Christmas_(Black_Mirror)"><i>White Christmas</i></a>.
                     The programme then moved to <a
                         href="https://www.netflix.com/ro-en/title/70264888"><i>Netflix</i></a>,
@@ -81,7 +83,6 @@
                     been seen by reviewers as prescient.
                 </p>
             </div>
-            <br><br>
         </section>
         <section>
             <h2 id="release">Release</h2>
@@ -138,22 +139,21 @@
                 </table>
                 <img id="poster" src="photos/img1.jpg" alt="TV Show Poster">
             </div>
-            <br><br>
         </section>
         <section>
             <h2 id="trailer">Watch the trailer here!</h2>
-            <img id="suad" src="photos/suad.jpg" alt="Episode Poster">
-            <iframe class="yt" src="https://www.youtube.com/embed/V0XOApF5nLU"
-                title="Black Mirror | Trailer [HD] | Netflix" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <img id="white" src="photos/whitechristmas.jpg" alt="Episode Poster">
-            <h2 id="Play">Play the Nohzdyve game!</h2>
-            <br><br>
-            <iframe class="game" src="https://bandersnatch.glitch.me"></iframe>
-            <br><br>
+            <div id="container_trailer">
+                <img id="suad" src="photos/suad.jpg" alt="Episode Poster">
+                <iframe class="yt" src="https://www.youtube.com/embed/V0XOApF5nLU" title="Black Mirror Trailer Netflix"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img id="white" src="photos/whitechristmas.jpg" alt="Episode Poster">
+            </div>
+            <h2 id="Play">Watch the Nohzdyve gameplay!</h2>
+            <iframe class="game" src="https://www.youtube.com/embed/mrr4AHmmZqY" title="Nohzdyve Gameplay" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
     </main>
-    <footer><b>page made by Roman Mateea</b></footer>
+    
+    <script src="index.js"></script>
 </body>
 
 </html>

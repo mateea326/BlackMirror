@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Fontana;
+    src: url("Fontana.otf");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    background-color: #a72550;
+    color: thistle;
+}
+
+li a:hover {
+    background-color: thistle;
+    color: rgb(219, 123, 171);
+}
+
+.nav_bar {
+    display: flex;
+    position: relative;
+}
+
+h1 {
+    padding: 1rem;
+    font-family: Fontana;
+    font-size: 4rem;
+    color: thistle;
+    margin-top: -2%;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.1rem #a72550;
+}
+
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    transition: 0.2s ease;
+    background-image: url("photos/back.jpg");
+    color: white;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem;
+}
+
+button {
+    color: #a72550;
+    background-color: thistle;
+    font-size: 1.2rem;
+    margin-left:1.6%;
+}
+
+#quiz-result {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: thistle;
+    font-family: Fontana;
+    display: none;
+}
+
